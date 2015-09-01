@@ -1,7 +1,7 @@
 # SlackbotAnchor
 Access your [slack](https://slack.com/)bot from .Net
 
-Begin with activating the Slackbot integration in slack to retrieve your token.
+Activate the Slackbot integration in slack to retrieve your token.
 
 ```csharp
 
