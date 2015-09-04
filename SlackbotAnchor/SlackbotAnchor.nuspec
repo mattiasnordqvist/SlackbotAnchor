@@ -7,11 +7,11 @@
     <description>$description$</description>
     <authors>Mattias Nordqvist</authors>
     <owners>Mattias Nordqvist</owners>
-    <licenseUrl>https://raw.githubusercontent.com/mattiasnordqvist/web-anchor/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/mattiasnordqvist/Web-Anchor</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/mattiasnordqvist/slackbotanchor/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/mattiasnordqvist/SlackbotAnchor</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>Initial release</releaseNotes>
     <copyright>Copyright 2015</copyright>
-    <tags>REST HTTP API JSON</tags>
+    <tags>Slack Slackbot</tags>
   </metadata>
 </package>
