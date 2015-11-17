@@ -16,7 +16,7 @@ namespace SlackbotAnchor
             _api = Api.For<ISlackbotApi>(string.Format("https://{0}.slack.com", team), new SlackBotSettings());
         }
 
-        public HttpResponseMessage Post(string channel, string text)
+        public virtual HttpResponseMessage Post(string channel, string text)
         {
             if (!channel.StartsWith("#"))
             {

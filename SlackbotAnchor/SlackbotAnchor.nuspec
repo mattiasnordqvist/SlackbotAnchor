@@ -10,7 +10,7 @@
     <licenseUrl>https://raw.githubusercontent.com/mattiasnordqvist/slackbotanchor/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/mattiasnordqvist/SlackbotAnchor</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Initial release</releaseNotes>
+    <releaseNotes>Updated Web Anchor and Json.NET dependencies</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>Slack Slackbot</tags>
   </metadata>

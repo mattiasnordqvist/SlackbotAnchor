@@ -1,13 +1,12 @@
 using WebAnchor;
-using WebAnchor.RequestFactory;
 
 namespace SlackbotAnchor
 {
     public class SlackBotSettings : ApiSettings
     {
-        public override IContentSerializer CreateContentSerializer()
+        public SlackBotSettings()
         {
-            return new RawContentSerializer();
+            ContentSerializer = new RawContentSerializer();
         }
     }
 }
