@@ -1,10 +1,11 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 
 using WebAnchor;
 
 namespace SlackbotAnchor
 {
-    public class Slackbot
+    public class Slackbot : IDisposable
     {
         private readonly string _token;
         private readonly ISlackbotApi _api;
@@ -13,7 +14,7 @@ namespace SlackbotAnchor
         {
             _token = token;
             
-            _api = Api.For<ISlackbotApi>(string.Format("https://{0}.slack.com", team), new SlackBotSettings());
+            _api = Api.For<ISlackbotApi>($"https://{team}.slack.com", new SlackBotSettings());
         }
 
         public virtual HttpResponseMessage Post(string channel, string text)
@@ -25,6 +26,11 @@ namespace SlackbotAnchor
 
             var result = _api.Post(_token, channel, text).Result;
             return result;
+        }
+
+        public void Dispose()
+        {
+            _api.Dispose();
         }
     }
 }
