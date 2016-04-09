@@ -13,6 +13,5 @@ namespace SlackbotAnchor
     {
         [Post("")]
         Task<HttpResponseMessage> Post(string token, string channel, [Content]string text);
-
     }
 }

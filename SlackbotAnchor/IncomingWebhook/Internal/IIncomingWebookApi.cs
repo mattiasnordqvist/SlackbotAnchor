@@ -9,7 +9,7 @@ using WebAnchor.RequestFactory.Transformation.Transformers;
 namespace SlackbotAnchor.IncomingWebhook.Internal
 {
     [BaseLocation("")]
-    public interface IIncomingWebookApi :IDisposable
+    public interface IIncomingWebookApi : IDisposable
     {
         [Post("")]
         Task<HttpResponseMessage> Send([Content]Message message);

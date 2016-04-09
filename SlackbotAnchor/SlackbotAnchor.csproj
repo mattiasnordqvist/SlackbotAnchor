@@ -47,10 +47,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IncomingWebhook\CamelToSnakeContractResolver.cs" />
-    <Compile Include="IncomingWebhook\IIncomingWebookApi.cs" />
+    <Compile Include="IncomingWebhook\Attachment.cs" />
+    <Compile Include="IncomingWebhook\Field.cs" />
+    <Compile Include="IncomingWebhook\Internal\CamelToSnake.cs" />
+    <Compile Include="IncomingWebhook\Internal\CamelToSnakeContractResolver.cs" />
+    <Compile Include="IncomingWebhook\Internal\IIncomingWebookApi.cs" />
     <Compile Include="IncomingWebhook\IncomingWebhook.cs" />
-    <Compile Include="IncomingWebhook\IncomingWebhookSettings.cs" />
+    <Compile Include="IncomingWebhook\Internal\IncomingWebhookSettings.cs" />
+    <Compile Include="IncomingWebhook\Message.cs" />
     <Compile Include="ISlackbotApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RawContentSerializer.cs" />

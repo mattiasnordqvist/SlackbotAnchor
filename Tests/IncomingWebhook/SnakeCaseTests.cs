@@ -19,7 +19,6 @@ namespace Tests.IncomingWebhook
             Assert.AreEqual("image_url", CamelToSnake.Transform("ImageUrl"));
         }
 
-
         [Test]
         public void TestTwoChanges()
         {

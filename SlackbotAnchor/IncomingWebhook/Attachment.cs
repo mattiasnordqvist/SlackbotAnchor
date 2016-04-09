@@ -23,6 +23,5 @@ namespace SlackbotAnchor.IncomingWebhook
         
         public string ImageUrl { get; set; }
         public string ThumbUrl { get; set; }
-        
     }
 }

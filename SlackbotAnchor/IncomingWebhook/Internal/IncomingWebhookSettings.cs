@@ -9,7 +9,7 @@ namespace SlackbotAnchor.IncomingWebhook.Internal
     {
         public IncomingWebhookSettings()
         {
-            ContentSerializer = new ContentSerializer(new JsonSerializer() {ContractResolver = new CamelToSnakeContractResolver() });
+            ContentSerializer = new ContentSerializer(new JsonSerializer { ContractResolver = new CamelToSnakeContractResolver() });
         }
     }
 }
