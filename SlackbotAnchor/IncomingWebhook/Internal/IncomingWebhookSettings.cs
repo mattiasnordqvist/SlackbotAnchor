@@ -1,15 +1,15 @@
 using Newtonsoft.Json;
 
 using WebAnchor;
-using WebAnchor.RequestFactory;
+using WebAnchor.RequestFactory.Serialization;
 
 namespace SlackbotAnchor.IncomingWebhook.Internal
 {
-    public class IncomingWebhookSettings : ApiSettings
+    public class IncomingWebhookSettings : DefaultApiSettings
     {
         public IncomingWebhookSettings()
         {
-            ContentSerializer = new ContentSerializer(new JsonSerializer { ContractResolver = new CamelToSnakeContractResolver() });
+            Request.ContentSerializer = new JsonContentSerializer(new JsonSerializer { ContractResolver = new CamelToSnakeContractResolver() });
         }
     }
 }

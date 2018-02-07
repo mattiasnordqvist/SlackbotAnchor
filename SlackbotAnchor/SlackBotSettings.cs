@@ -2,11 +2,11 @@ using WebAnchor;
 
 namespace SlackbotAnchor
 {
-    public class SlackBotSettings : ApiSettings
+    public class SlackBotSettings : DefaultApiSettings
     {
         public SlackBotSettings()
         {
-            ContentSerializer = new RawContentSerializer();
+            Request.ContentSerializer = new RawContentSerializer();
         }
     }
 }
