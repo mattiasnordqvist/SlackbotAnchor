@@ -103,9 +103,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SlackbotAnchor\SlackbotAnchor.csproj">
-      <Project>{2D723B50-A0D0-410B-9A48-E8D8EBADA1FD}</Project>
-      <Name>SlackbotAnchor</Name>
+    <ProjectReference Include="..\SlackbotAnchor.Standard\SlackbotAnchor.Standard.csproj">
+      <Project>{fcc3d545-2aac-49ca-b0c5-1268cf27b28c}</Project>
+      <Name>SlackbotAnchor.Standard</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

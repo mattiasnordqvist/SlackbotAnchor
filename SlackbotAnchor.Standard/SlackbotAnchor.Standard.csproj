@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.5;netstandard2.0</TargetFrameworks>
+    <PackageId>SlackbotAnchor</PackageId>
+    <Authors>SlackbotAnchor</Authors>
+    <Product>SlackbotAnchor</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>3.0.0</Version>
+    <Description>Access your slackbot from .Net. Not created by, affiliated with, or supported by Slack Technologies, Inc.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WebAnchor" Version="6.6.0" />
+  </ItemGroup>
+
+</Project>
